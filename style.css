@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#video-preloader {
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+}
+#website-content {
+    display: none;
+  }
+
+.logo {
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.space {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigator {
+    padding-top: 15px;
+    /* background-color: aqua; */
+}
+
+#ic1 {
+    width: 15px;
+    margin-right: 6px;
+}
+
+#ic2 {
+    margin-left: 6px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn button {
+    align-items: center;
+    display: inline-flex;
+    padding: 4px 10px;
+}
+
+.sec-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.pri-btn {
+    color: white;
+    background-color: #e50914;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.head-part {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/images/header-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+
+.text-part {
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 80px; */
+}
+
+.sub-div {
+    text-align: center;
+}
+
+.h-btn {
+    margin-left: 0px;
+    padding: 14px 30px;
+}
+
+.input-bar {
+    border: 1px solid white;
+    background-color: rgba(18, 18, 18, 0.63);
+    /* mix-blend-mode: darken; */
+    color: rgb(255, 33, 33);
+    border-radius: 4px;
+    padding: 14px 50px;    
+    text-overflow:ellipsis;
+}
+
+.sub-div h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.sub-div p {
+    margin-bottom: 10px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+/* feature-part */
+.feature-part {
+    margin-top: 10px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+hr {
+    border: 0.2rem solid rgba(112, 109, 109, 0.636);
+}
+
+.left-part {
+    width: 400px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.right-part img {
+    padding-top: 40px;
+    padding-left: 15px;
+    width: 400px;
+}
+
+.feature-part-2 {
+    margin-top: 10px;
+    padding-top: 40px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.left {
+    position: relative;
+}
+
+.sub-animation {
+    position: relative;
+    width: 310px;
+    background-color: black;
+    height: 60px;
+    bottom: 90px;
+    left: 96px;
+    padding-left: 5px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.left img {
+    padding-right: 15px;
+    width: 520px;
+}
+
+.right {
+    padding-top: 80px;
+    width: 300px;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.poster img {
+    position: relative;
+    width: 48px;
+    padding-top: 5px;
+    padding-bottom: auto;
+}
+
+.status {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
+    background-size: contain;
+}
+
+.m-name {
+    flex-grow: 1;
+}
+
+.m-name p {
+    color: #0071eb;
+}
+.faq-part
+{
+    margin-top: 25px;
+}
+.faq-heading
+{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.q1
+{
+    margin-top: 8px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(84, 78, 78, 0.636);
+    padding: 18px 25px;
+    border: none;
+    color: white;
+}
+
+.q1:hover
+{
+    background-color: rgba(174, 166, 166, 0.684);
+    transition: 0.5s;
+}
+.faq-txt-area
+{
+    margin-top: 8px;
+    width: 100%;
+    display:none;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color:rgba(84, 78, 78, 0.636);
+    padding: 18px 25px;
+    border: none;
+}
+.content-input
+{
+    margin-top: 35px;
+    text-align: center;
+    display: i;
+}
+.frm
+{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.lst
+{   
+    display: inline-flex;
+    padding: 6px 15px;
+}
+.footer
+{
+    padding-left: 10px;
+}
+.ft-head
+{
+    margin-top: 20px;
+}
+.ft-btn
+{
+    margin-top: 20px;
+}
+.txt{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.links-container
+{
+    margin-top: 30px;
+}
+.itm a
+{
+    text-decoration: underline;
+    color: white;
+    display:block;
+    padding-bottom:8px;
+}
