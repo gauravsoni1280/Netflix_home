@@ -10,4 +10,14 @@ video.addEventListener("ended", function () {
     // Show the website content element
     content.style.display = "block";
 });
+//get the faq class through queryselector
+let answers = document.querySelectorAll(".faq-blocks");
 
+answers.forEach((event) => {
+    const ans=event.querySelector('.faq-txt-area');
+    const icr=event.querySelector('.icon');
+  event.addEventListener("click", () => {
+      ans.classList.toggle('visi');
+      icr.classList.toggle('icr');
+  });
+});
